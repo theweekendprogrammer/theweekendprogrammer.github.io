@@ -1,0 +1,22 @@
+permalink: pretty
+
+title: The Weekend Programmer
+url: https://theweekendprogrammer.com
+paginate: 1
+baseurl: ""
+analytics_id: "UA-108313462-1"
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+author:
+  name: Zachary Rankin
+  url: https://twitter.com/zacharyrankin
+  email: zach@theweekendprogrammer.com
+
+version: 1.0.0
+github:
+  repo: https://github.com/theweekendprogrammer/theweekendprogrammer.github.io
+
+markdown: kramdown
