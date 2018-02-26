@@ -1,8 +1,8 @@
-permalink: pretty
+permalink: :title
 
 title: The Weekend Programmer
 url: https://theweekendprogrammer.com
-paginate: 1
+paginate: 10
 baseurl: ""
 analytics_id: "UA-108313462-1"
 

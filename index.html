@@ -4,9 +4,17 @@ title: Home
 ---
 
 <article class="page">
-  Hello there, I am <strong>The Weekend Programmer</strong> and I want to help
-  solve your web application development problems.
+  <p>
+    Hello there, I am <strong>The Weekend Programmer</strong> and I want to help
+    solve your web application development problems.
+  </p>
 
-  I don't have any posts just yet, but you can signup to get them by
-  <a href="https://eepurl.com/djf-Vf">email</a> once I do.
+  <p>
+    {% for post in site.posts limit:1 %}
+      Read my latest post,
+      &quot;<a href="{{ post.url }}">{{ post.title }}</a>&quot;.
+    {% endfor %}
+    Check out my other <a href="{{ site.baseurl }}/posts">posts</a> or get
+    them by <a href="https://eepurl.com/djf-Vf">email</a>.
+  </p>
 </article>

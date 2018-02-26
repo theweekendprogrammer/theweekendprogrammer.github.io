@@ -27,7 +27,11 @@
       </main>
 
       <footer class="footer">
-        <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+        <a href="{{ site.baseurl }}/" title="Home">Home</a>
+        <a href="{{ site.baseurl }}/posts" title="Posts">Posts</a>
+        <a href="mailto:info@theweekendprogrammer.com" title="Contact">Contact</a>
+        <br>
+        {{ site.title }}
         <small>
           &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
         </small>
