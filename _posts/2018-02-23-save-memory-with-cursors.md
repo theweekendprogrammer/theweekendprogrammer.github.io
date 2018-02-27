@@ -17,6 +17,9 @@ FROM really_large_table
 SQL;
 
 $res = pg_query($sql);
+
+// Never gets here because pg_query() eats up all of the memory on the
+// application server
 while ($row = pg_fetch_row($res)) {
   // Process $row...
 }
