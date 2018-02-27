@@ -4,7 +4,21 @@ layout: default
 
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
+  <ul class="post-tags">
+  {% for tag in page.tags %}
+    <li>{{ tag }}</li>
+  {% endfor %}
+  </ul>
+
   {{ content }}
+  <hr>
+
+  Thank you so much for taking the time to read this post.
+
+  <br><br>
+
+  Check out my other <a href="{{ site.baseurl }}/posts">posts</a> or get
+  them by <a href="https://eepurl.com/djf-Vf">email</a>.
 </article>
 
 {% if site.related_posts != empty %}
@@ -21,3 +35,4 @@ layout: default
   </ul>
 </aside>
 {% endif %}
+
