@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save memory with cursors
-tags: postgresql
+tags: PostgreSQL
 ---
 
 Has your application ever run out of memory when running a query that returns a
