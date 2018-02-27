@@ -2,17 +2,17 @@
 layout: default
 title: Posts
 ---
+<h1>Posts</h1>
 
 <div class="posts">
+  <p>
+  I write articles about web application development problems and how to solve
+  them. You can get my <a href="https://eepurl.com/djf-Vf">newest posts via
+                          email</a>.
+  </p>
+  <ul>
   {% for post in site.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    {{ post.content | truncatehtml | truncatewords: 60 }}
-  </article>
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
+  </ul>
 </div>
