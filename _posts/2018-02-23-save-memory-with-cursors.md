@@ -5,7 +5,7 @@ tags: PostgreSQL
 ---
 
 Has your application ever run out of memory when running a query that returns a
-a significant amount of data?
+significant amount of data?
 
 For example, in PHP, I have seen a script like the following die because it ate
 up too much memory on my application server.
@@ -30,7 +30,7 @@ amount of data from Postgres?
 
 Well, imagine you and me are packing up my book collection which consists of
 hundreds of titles. Because you are such a good friend, you hold up a box and
-ask "Can I get all the books?" I begin to fill up the box as fast as I can
+ask "Can I get all the books?" I begin to fill up the box as fast as I can,
 shoveling all of the books in at the same time. With this approach, the box
 would quickly become overflowed and dangerously heavy and you would most likely
 drop it.
