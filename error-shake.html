@@ -1,0 +1,39 @@
+---
+layout: default
+title: Error Shake Example
+---
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<style>
+.error-shake {
+  animation: error-shake 0.4s 1 linear;
+}
+@keyframes error-shake {
+  0% { transform: translate(30px); }
+  20% { transform: translate(-30px); }
+  40% { transform: translate(15px); }
+  60% { transform: translate(-15px); }
+  80% { transform: translate(8px); }
+  100% { origin-transform: translate(0px); }
+}
+
+.item {
+  margin-bottom: 2em;
+}
+</style>
+
+<div class="item">
+  <a href="javascript:;"
+    class="item-remove-js">You can't Remove ME!</a>
+</div>
+
+<script type="text/javascript">
+$('.item')
+  .on('click', '.item-remove-js', function (e) {
+    $(e.delegateTarget).addClass('error-shake');
+  })
+  .on('animationend', function () {
+    $(this).removeClass('error-shake');
+  });
+</script>
